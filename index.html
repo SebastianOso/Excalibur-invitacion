@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="icon" href="./assets/logos/swords1.png" type="image/png">
   <meta charset="UTF-8" />
   <title>Cóctel de Networking | Excalibur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Invitación al Cóctel de Networking en el marco de GreenTech. RSVP, ubicación y WhatsApp." />
+
+  <link rel="icon" type="image/png" href="./assets/logos/image.png" />
+  <link rel="shortcut icon" href="./assets/logos/image.png" />
+  <link rel="apple-touch-icon" href="./assets/logos/image.png" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -18,7 +21,7 @@
       <div class="logo-row" aria-label="Organizadores">
         <img class="logo" src="./assets/logos/excalibur.png" alt="Excalibur Plastics Mex">
         <img class="logo" src="./assets/logos/bayer.png" alt="Bayer">
-       </div>
+      </div>
     </div>
   </header>
 
@@ -28,7 +31,6 @@
     <section class="hero" aria-label="Invitación">
 
       <div class="hero-media carousel" aria-label="Galería del evento">
-        <!-- Carrusel: usa .jpeg (como en tu carpeta) -->
         <img class="slide is-active" src="./assets/photos/01.jpeg" alt="Networking 01">
         <img class="slide" src="./assets/photos/02.jpeg" alt="Networking 02">
         <img class="slide" src="./assets/photos/03.jpeg" alt="Networking 03">
@@ -71,11 +73,10 @@
             </div>
           </div>
 
-          <!-- ÚNICO título + ÚNICA descripción -->
           <h1>Cóctel de Networking</h1>
           <p class="subtitle">
             Te invitamos a convivir con growers, técnicos y aliados del sector en un espacio relajado
-            para conectar, compartir experiencias y hacer negocios.
+            para conectar y compartir experiencias.
           </p>
 
         </div>
@@ -141,7 +142,7 @@
 
         <p class="note">
           * Estacionamiento y acceso en el sótano 2.
-          </p>
+        </p>
       </section>
 
       <!-- ================= QUÉ ESPERAR ================= -->
@@ -153,36 +154,35 @@
 
         <ul class="bullets">
           <li><strong>Cena</strong> para convivir y cerrar el día con calma.</li>
-          <li><strong>Tragos</strong> (coctelería y bebidas) durante el evento.</li>
+          <li><strong>Bebidas</strong> brindemos por uno año mas de trabajo juntos.</li>
           <li><strong>Música</strong> ambiente para acompañar la noche.</li>
         </ul>
 
         <p class="muted" style="margin-top:10px;">
-          Recomendación: llevar ganas de bailar. 
+          Un espacio relajado para convivir con amigos del medio.
         </p>
       </section>
 
-      <!-- ================= POR QUÉ ASISTIR ================= -->
-      <section class="card" aria-label="Por qué asistir">
-        <div class="card-head">
-          <h2>¿Por qué asistir?</h2>
-          <p>Enfoque 100% en relaciones y oportunidades comerciales.</p>
-        </div>
+     <!-- ============== POR QUÉ ASISTIR ============== -->
+<section class="card" aria-label="Por qué asistir">
+  <div class="card-head">
+    <h2>¿Por qué asistir?</h2>
+    <p>Una noche para convivir, agradecer y fortalecer amistades dentro del sector.</p>
+  </div>
 
-        <ul class="bullets">
-          <li><strong>Conectar</strong> con tomadores de decisión del sector.</li>
-          <li><strong>Intercambiar</strong> experiencias y mejores prácticas.</li>
-          <li><strong>Explorar</strong> oportunidades de colaboración y negocio.</li>
-        </ul>
+  <ul class="bullets">
+    <li><strong>Convivir</strong> con amigos y colegas del medio en un ambiente relajado.</li>
+    <li><strong>Agradecer</strong> un año más de colaboración y trabajo juntos.</li>
+    <li><strong>Compartir</strong> una buena charla y el gusto de coincidir.</li>
+  </ul>
 
-        <!-- Chips útiles y “rápidos” (se ven muy bien en móvil) -->
-        <div class="chips" aria-label="Etiquetas del evento">
-          <span class="chip">Networking</span>
-          <span class="chip">GreenTech</span>
-          <span class="chip">Growers & Técnicos</span>
-          <span class="chip">Cupo limitado</span>
-        </div>
-      </section>
+  <div class="chips" aria-label="Etiquetas del evento">
+    <span class="chip">Convivencia</span>
+    <span class="chip">GreenTech</span>
+    <span class="chip">Amigos del sector</span>
+    <span class="chip">Cupo limitado</span>
+  </div>
+</section>
 
       <!-- ================= UBICACIÓN / MAPA ================= -->
       <section class="card" aria-label="Ubicación">
@@ -191,8 +191,6 @@
           <p>Hotel Domún, Querétaro.</p>
         </div>
 
-        <!-- Nota: el link corto maps.app.goo.gl no sirve directo para iframe.
-             Este embed por búsqueda es lo más estable sin copiar el "Embed map" de Google. -->
         <div class="map-wrap" aria-label="Mapa">
           <iframe
             loading="lazy"
@@ -282,7 +280,6 @@
 
   <!-- ================= SCRIPTS ================= -->
   <script>
-    // ================= CARRUSEL =================
     (function () {
       const slides = Array.from(document.querySelectorAll(".slide"));
       if (!slides.length) return;
@@ -297,10 +294,8 @@
       }, intervalMs);
     })();
 
-    // ================= COUNTDOWN =================
     (function () {
-      // Evento: 25/03/2026 8:00 PM (hora local)
-      const eventDate = new Date(2026, 2, 25, 20, 0, 0).getTime(); // mes 2 = marzo
+      const eventDate = new Date(2026, 2, 25, 20, 0, 0).getTime();
 
       const $days = document.getElementById("days");
       const $hours = document.getElementById("hours");
