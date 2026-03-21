@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Excalibur Plastics Mex//GreenTech Networking//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:greentech-networking-excalibur-20260325T200000
+DTSTAMP:20260223T000000Z
+DTSTART:20260325T200000
+DTEND:20260326T000000
+SUMMARY:Cóctel de Networking — Excalibur Plastics Mex (GreenTech)
+LOCATION:Hotel Domún, Querétaro (https://maps.app.goo.gl/eRJXXNP51NJSQLpi6)
+DESCRIPTION:Invitación al Cóctel de Networking de Excalibur Plastics Mex en el marco de GreenTech.\nRSVP: https://docs.google.com/forms/d/e/1FAIpQLScsNWq0ym4-JiiI4a8OKmaoY58UJgFX73Zmj_kT6F77SC02rw/viewform\nWhatsApp: https://wa.me/524424707746
+END:VEVENT
+END:VCALENDAR
